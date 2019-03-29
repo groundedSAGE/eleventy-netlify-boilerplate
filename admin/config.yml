@@ -15,11 +15,10 @@ collections:
     create: false # Change to true to allow editors to create new pages
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Navigation Title", name: "navtitle", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "hidden", default: "nav" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Consult", name: "consult_text", widget: "markdown"}
+      - { label: "Workshop", name: "workshop_text", widget: "markdown"}
       - { label: "Body", name: "body", widget: "markdown" }
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
@@ -33,4 +32,5 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
+
 
