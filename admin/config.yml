@@ -18,7 +18,8 @@ collections:
       - { label: "Navigation Title", name: "navtitle", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Consult", name: "consult_text", widget: "markdown"}
-      - { label: "Workshop", name: "workshop_text", widget: "markdown"}
+      - { label: "Workshop", name: "workshop_text", widget: "text"}
+      - { label: "About Me", name: "about_me", widget: "list"}
       - { label: "Body", name: "body", widget: "markdown" }
   # Our blog posts
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
